@@ -1,0 +1,87 @@
+{
+    "meta": {
+        "pagination": {
+            "total": 2500,
+            "pages": 250,
+            "page": 1,
+            "limit": 10,
+            "links": {
+                "previous": null,
+                "current": "https://gorest.co.in/public/v1/users?page=1",
+                "next": "https://gorest.co.in/public/v1/users?page=2"
+            }
+        }
+    },
+    "data": [
+        {
+            "id": 219095,
+            "name": "Susheel Mukhopadhyay",
+            "email": "mukhopadhyay_susheel@abshire.com",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 218719,
+            "name": "Mrs. Chidaatma Gupta",
+            "email": "mrs_gupta_chidaatma@witting.biz",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 218321,
+            "name": "Vedanga Bhat LLD",
+            "email": "bhat_vedanga_lld@kunde-bins.co",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 218320,
+            "name": "Rep. Harinakshi Varrier",
+            "email": "harinakshi_rep_varrier@hammes-dickens.info",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 217414,
+            "name": "Laal Ahluwalia",
+            "email": "ahluwalia_laal@ruecker-wyman.io",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 217413,
+            "name": "Atreyee Pothuvaal III",
+            "email": "pothuvaal_atreyee_iii@padberg.name",
+            "gender": "male",
+            "status": "active"
+        },
+        {
+            "id": 217412,
+            "name": "Atreyi Ahluwalia",
+            "email": "ahluwalia_atreyi@emard.net",
+            "gender": "male",
+            "status": "inactive"
+        },
+        {
+            "id": 216964,
+            "name": "Vrund Rana",
+            "email": "rana_vrund@lynch.co",
+            "gender": "female",
+            "status": "active"
+        },
+        {
+            "id": 216963,
+            "name": "Narayan Tandon",
+            "email": "narayan_tandon@rempel.net",
+            "gender": "female",
+            "status": "inactive"
+        },
+        {
+            "id": 216962,
+            "name": "Lalita Asan",
+            "email": "lalita_asan@kihn-hansen.co",
+            "gender": "male",
+            "status": "active"
+        }
+    ]
+}

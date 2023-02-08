@@ -1,4 +1,4 @@
-//
+
 //  EmployeeDatasource.swift
 //  URLSessionEmployees
 //
@@ -7,8 +7,18 @@
 
 import Foundation
 
+protocol EmployeeData {
+    
+    func getEmployees(completionBlock: @escaping (Result<Employees, NetworkError>) -> Void)
+    
+    func createEmployee(employee: NewUser, completionBlock: @escaping (Result<Employee, NetworkError>) -> Void)
+    
+    func updateEmployee(employee: User, completionBlock: @escaping (Result<Employee, NetworkError>) -> Void)
+    
+    func deleteEmployee(employee: User, completionBlock: @escaping (Result<Bool, NetworkError>) -> Void)
+}
 
-final class EmployeeDatasource {
+final class EmployeeDatasource: EmployeeData {
     
     private let urlBase = "https://gorest.co.in/public/v1/users"
     private let token = "4dfa830ba988219d7ae75b3b267538bbeaba79d2da09afdfa9fba0eed7a59040"
@@ -20,14 +30,15 @@ final class EmployeeDatasource {
             completionBlock(.failure(.urlError))
             return
         }
-//Esta es otra manera de generar la peticion
-//        var request = URLRequest(url: url)
-//        request.httpMethod = "GET"
-//        URLSession.shared.dataTask(with: request) { data, response, error in
-            
+        //Esta es otra manera de generar la peticion
+        //        var request = URLRequest(url: url)
+        //        request.httpMethod = "GET"
+        //        URLSession.shared.dataTask(with: request) { data, response, error in
+        
         URLSession.shared.dataTask(with: url) { data, response, error in
             if let error = error {
                 completionBlock(.failure(.transportError(error)))
+                print("Error transporte \(error.localizedDescription)")
                 return
             }
             if let response = response as? HTTPURLResponse, !(200...299).contains(response.statusCode) {

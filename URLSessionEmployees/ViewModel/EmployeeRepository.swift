@@ -7,11 +7,21 @@
 
 import Foundation
 
-final class EmployeeRepository{
+protocol EmployeeRepo {
+    func getEmployees(completionBlock: @escaping (Result<Employees, NetworkError>) -> Void)
     
-    private let employeesDatasource: EmployeeDatasource
+    func createEmployee(employee: NewUser, completionBlock: @escaping (Result<Employee,NetworkError>) -> Void)
     
-    init(employeeDatasource: EmployeeDatasource = EmployeeDatasource()){
+    func updateEmployee(employee: User, completionBlock: @escaping (Result<Employee, NetworkError>) -> Void)
+    
+    func deleteEmployee(employee: User, completionBlock: @escaping(Result<Bool, NetworkError>) -> Void)
+}
+
+final class EmployeeRepository: EmployeeRepo{
+    
+    private let employeesDatasource: EmployeeData
+    
+    init(employeeDatasource: EmployeeData = EmployeeDatasource()){
         self.employeesDatasource = employeeDatasource
     }
     
