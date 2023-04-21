@@ -10,7 +10,8 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var isPresented = false
-    @StateObject var employeesViewModel = EmployeesViewModel()
+//    @StateObject var employeesViewModel = EmployeesViewModel()
+    @StateObject var employeesViewModel = AsyncEmployeesViewModel()
 //    1. Manejo de viewModel con EnvironmentObject (Diferente a StateObject)
 //    @EnvironmentObject var employeesViewModel : EmployeesViewModel
     var body: some View {
@@ -28,7 +29,7 @@ struct HomeView: View {
                     }
                     .swipeActions(edge: .leading) {
                         Button {
-                            employeesViewModel.deleteEmployee(employee: employee)
+                            employeesViewModel.deleteEmployeeAsync(employee: employee)
                         } label: {
                             Label("Borrar", systemImage: "trash.fill")
                         }
@@ -56,21 +57,11 @@ struct HomeView: View {
         }
                     
         .onAppear{
-            employeesViewModel.getEmployees()
+            
+            employeesViewModel.getEmployeesAsync()
+            
         }
-        .alert(isPresented: $employeesViewModel.alertError) {
-            Alert(
-                title: Text("Error"),
-                message: Text(employeesViewModel.messageError?.description ?? "Error"),
-                primaryButton: .default(
-                    Text("Try Again"),
-                    action: employeesViewModel.getEmployees
-                ),
-                secondaryButton: .destructive(
-                    Text("Cancel")
-                )
-            )
-        }
+        
     }
 }
 

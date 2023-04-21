@@ -16,7 +16,8 @@ struct UpdateEmployee: View {
     
     //    1. Manejo de viewModel con EnvironmentObject (Diferente a StateObject)
     //    @EnvironmentObject var employeesViewModel : EmployeesViewModel
-    @ObservedObject var employeesViewModel : EmployeesViewModel
+//    @ObservedObject var employeesViewModel : EmployeesViewModel
+    @ObservedObject var employeesViewModel : AsyncEmployeesViewModel
     @Binding var employee: User
     @State var name = ""
     @State var email = ""
@@ -56,7 +57,7 @@ struct UpdateEmployee: View {
 //                employee.name = name
                 employee.email = email
                 employee.sex = genre
-                employeesViewModel.updateEmployee(employee: employee)
+                employeesViewModel.updateEmployeeAsync(employee: employee)
                 // Cerrar la view para iOS 14
                 //self.presentationMode.wrappedValue.dismiss()
                 // Cerrar la view para iOS 15
@@ -81,7 +82,7 @@ struct UpdateEmployee: View {
                 primaryButton: .default(
                     Text("Try Again"))
                 {
-                    employeesViewModel.updateEmployee(employee: employee)
+                    employeesViewModel.getEmployeesAsync()
                 },
                 secondaryButton: .destructive(
                     Text("Cancel")

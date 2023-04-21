@@ -3,4 +3,150 @@
    uuid = "A84ED8B3-9770-48E5-A51E-592EC41A182E"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "03502455-4D10-4186-A1E9-A17F03612EB3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "URLSessionEmployees/ViewModel/EmployeeDatasource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "createEmployee(employee:completionBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EFBE7122-7E56-4504-B7DF-59271D3B57FC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "URLSessionEmployees/ViewModel/EmployeeDatasource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "createEmployee(employee:completionBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6EA2BC34-A58E-4F65-A85D-7DF9F2C7620C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "URLSessionEmployees/ViewModel/EmployeeDatasource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "createEmployee(employee:completionBlock:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "311FE998-E2D9-4CEF-B95C-F6351838B1B0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "URLSessionEmployees/ViewModel/EmployeeDatasource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "createEmployee(employee:completionBlock:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "311FE998-E2D9-4CEF-B95C-F6351838B1B0 - 4439501fe1101eed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "URLSessionEmployees.EmployeeDatasource.createEmployee(employee: URLSessionEmployees.NewUser, completionBlock: (Swift.Result&lt;URLSessionEmployees.Employee, URLSessionEmployees.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "URLSessionEmployees"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robinsongonzalez/Documents/Proyectos%20Xcode/URLSessionEmployees/URLSessionEmployees/ViewModel/EmployeeDatasource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "1600">
+               </Location>
+               <Location
+                  uuid = "311FE998-E2D9-4CEF-B95C-F6351838B1B0 - e1d0c276c52d8cd7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in URLSessionEmployees.EmployeeDatasource.createEmployee(employee: URLSessionEmployees.NewUser, completionBlock: (Swift.Result&lt;URLSessionEmployees.Employee, URLSessionEmployees.NetworkError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "URLSessionEmployees"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robinsongonzalez/Documents/Proyectos%20Xcode/URLSessionEmployees/URLSessionEmployees/ViewModel/EmployeeDatasource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F07B96B2-FCC9-4F0D-BD49-268A1FB32A38"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "URLSessionEmployees/ViewModel/EmployeesAsync/AsyncEmployeesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "updateEmployeeAsync(employee:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F07B96B2-FCC9-4F0D-BD49-268A1FB32A38 - 78ba76e25ac8370e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "URLSessionEmployees.AsyncEmployeesViewModel.updateEmployeeAsync(employee: URLSessionEmployees.User) -&gt; ()"
+                  moduleName = "URLSessionEmployees"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robinsongonzalez/Documents/Proyectos%20Xcode/URLSessionEmployees/URLSessionEmployees/ViewModel/EmployeesAsync/AsyncEmployeesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "62"
+                  endingLineNumber = "62"
+                  offsetFromSymbolStart = "164">
+               </Location>
+               <Location
+                  uuid = "F07B96B2-FCC9-4F0D-BD49-268A1FB32A38 - e774319d9d7684b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in URLSessionEmployees.AsyncEmployeesViewModel.updateEmployeeAsync(employee: URLSessionEmployees.User) -&gt; ()"
+                  moduleName = "URLSessionEmployees"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/robinsongonzalez/Documents/Proyectos%20Xcode/URLSessionEmployees/URLSessionEmployees/ViewModel/EmployeesAsync/AsyncEmployeesViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -21,6 +21,9 @@
 		6F4762E628DE46500035B295 /* EmployeeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4762E528DE46500035B295 /* EmployeeDatasource.swift */; };
 		6F4762EA28DE63950035B295 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4762E928DE63950035B295 /* UserModel.swift */; };
 		6F4762EC28DE64960035B295 /* EmployeesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4762EB28DE64960035B295 /* EmployeesModel.swift */; };
+		6F5DF31029F21A1E00BC9FCF /* AsyncEmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5DF30F29F21A1E00BC9FCF /* AsyncEmployeesViewModel.swift */; };
+		6F5DF31229F21A4F00BC9FCF /* AsyncEmployessRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5DF31129F21A4F00BC9FCF /* AsyncEmployessRepository.swift */; };
+		6F5DF31429F21A7E00BC9FCF /* AsyncEmployessDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5DF31329F21A7E00BC9FCF /* AsyncEmployessDatasource.swift */; };
 		6F94FEF5296E287100920CD8 /* NewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F94FEF4296E287100920CD8 /* NewUser.swift */; };
 		6FC9D5EF28F4742D003B386C /* UpdateEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9D5EE28F4742D003B386C /* UpdateEmployee.swift */; };
 		6FC9D62A2900745A003B386C /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC9D6292900745A003B386C /* Employee.swift */; };
@@ -56,6 +59,9 @@
 		6F4762E528DE46500035B295 /* EmployeeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDatasource.swift; sourceTree = "<group>"; };
 		6F4762E928DE63950035B295 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		6F4762EB28DE64960035B295 /* EmployeesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesModel.swift; sourceTree = "<group>"; };
+		6F5DF30F29F21A1E00BC9FCF /* AsyncEmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncEmployeesViewModel.swift; sourceTree = "<group>"; };
+		6F5DF31129F21A4F00BC9FCF /* AsyncEmployessRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncEmployessRepository.swift; sourceTree = "<group>"; };
+		6F5DF31329F21A7E00BC9FCF /* AsyncEmployessDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncEmployessDatasource.swift; sourceTree = "<group>"; };
 		6F94FEF4296E287100920CD8 /* NewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUser.swift; sourceTree = "<group>"; };
 		6FC9D5EE28F4742D003B386C /* UpdateEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateEmployee.swift; sourceTree = "<group>"; };
 		6FC9D6292900745A003B386C /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
@@ -145,9 +151,8 @@
 		6F4762DB28DDF19A0035B295 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				6F4762D628DA7B6C0035B295 /* EmployeesViewModel.swift */,
-				6F4762E328DDF6AC0035B295 /* EmployeeRepository.swift */,
-				6F4762E528DE46500035B295 /* EmployeeDatasource.swift */,
+				6F5DF30D29F219F200BC9FCF /* EmployeesAsync */,
+				6F5DF30C29F219E600BC9FCF /* Employees */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -188,6 +193,26 @@
 				6FF1E16628DE6737000152CA /* Employees.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6F5DF30C29F219E600BC9FCF /* Employees */ = {
+			isa = PBXGroup;
+			children = (
+				6F4762D628DA7B6C0035B295 /* EmployeesViewModel.swift */,
+				6F4762E328DDF6AC0035B295 /* EmployeeRepository.swift */,
+				6F4762E528DE46500035B295 /* EmployeeDatasource.swift */,
+			);
+			path = Employees;
+			sourceTree = "<group>";
+		};
+		6F5DF30D29F219F200BC9FCF /* EmployeesAsync */ = {
+			isa = PBXGroup;
+			children = (
+				6F5DF30F29F21A1E00BC9FCF /* AsyncEmployeesViewModel.swift */,
+				6F5DF31129F21A4F00BC9FCF /* AsyncEmployessRepository.swift */,
+				6F5DF31329F21A7E00BC9FCF /* AsyncEmployessDatasource.swift */,
+			);
+			path = EmployeesAsync;
 			sourceTree = "<group>";
 		};
 		6FF1E16828DE94F3000152CA /* Errors */ = {
@@ -316,7 +341,10 @@
 				6F4762EC28DE64960035B295 /* EmployeesModel.swift in Sources */,
 				6FF1E16728DE6737000152CA /* Employees.swift in Sources */,
 				6F4762C928DA7AF60035B295 /* URLSessionEmployeesApp.swift in Sources */,
+				6F5DF31029F21A1E00BC9FCF /* AsyncEmployeesViewModel.swift in Sources */,
+				6F5DF31229F21A4F00BC9FCF /* AsyncEmployessRepository.swift in Sources */,
 				6F4762E628DE46500035B295 /* EmployeeDatasource.swift in Sources */,
+				6F5DF31429F21A7E00BC9FCF /* AsyncEmployessDatasource.swift in Sources */,
 				6F4762E028DDF2ED0035B295 /* User.swift in Sources */,
 				6FC9D62A2900745A003B386C /* Employee.swift in Sources */,
 				6F4762D728DA7B6C0035B295 /* EmployeesViewModel.swift in Sources */,

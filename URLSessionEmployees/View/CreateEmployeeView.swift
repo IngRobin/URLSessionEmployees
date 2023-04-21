@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CreateEmployeeView: View {
     
-    @ObservedObject var employeesViewModel : EmployeesViewModel
+//    @ObservedObject var employeesViewModel : EmployeesViewModel
+    @ObservedObject var employeesViewModel : AsyncEmployeesViewModel
     
     @State var name = ""
     @State var correo = ""
@@ -43,7 +44,7 @@ struct CreateEmployeeView: View {
             
             Button {
                 
-                employeesViewModel.createEmployee(employee: NewUser(name: self.name, email: self.correo, gender: self.genero, status: "active"))
+                employeesViewModel.createEmployeeAsync(employee: NewUser(name: self.name, email: self.correo, gender: self.genero, status: "active"))
             } label: { 
                 Text("Crear")
             }
@@ -55,6 +56,7 @@ struct CreateEmployeeView: View {
 
 struct CreateEmployeeView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateEmployeeView(employeesViewModel: EmployeesViewModel())
+//        CreateEmployeeView(employeesViewModel: EmployeesViewModel())
+        CreateEmployeeView(employeesViewModel: AsyncEmployeesViewModel())
     }
 }
